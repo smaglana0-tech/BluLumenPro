@@ -677,6 +677,46 @@
       line-height: 1.6;
     }
 
+    /* ── CONTACT ── */
+    .contact { background: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .contact-card {
+      background: var(--light);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem 1.8rem;
+      text-align: center;
+    }
+
+    .contact-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+
+    .contact-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+      color: var(--navy);
+    }
+
+    .contact-card p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-card a {
+      color: var(--blue);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
     /* ── FAQ ── */
     .faq { background: var(--light); }
 
@@ -770,6 +810,7 @@
       <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8660004/" target="_blank" rel="noopener">The Science</a></li>
       <li><a href="#product">Products</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -1113,11 +1154,46 @@
     </div>
   </section>
 
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-lead" style="margin-bottom:2.5rem;">
+        Have a question about your order, our products, or the upcoming webinar? We're happy to help.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Email</h3>
+          <p><a href="mailto:hello@blulumenpro.shop">hello@blulumenpro.shop</a></p>
+          <p><a href="mailto:support@blulumenpro.shop">support@blulumenpro.shop</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p><a href="tel:+13523916479">(352) 391-6479</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Business Address</h3>
+          <p>128 W. Frisco Lane<br>Citrus Springs, FL 34434</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── FOOTER ── -->
   <footer>
     <p>Copyright &copy; 2026 BluLumen Pro &mdash; All Rights Reserved.</p>
-    <p style="margin-top:0.5rem;">
-      Questions? <a href="mailto:support@blulumenpro.shop">support@blulumenpro.shop</a>
+    <p style="margin-top:0.75rem;">
+      <a href="mailto:hello@blulumenpro.shop">hello@blulumenpro.shop</a> &nbsp;·&nbsp;
+      <a href="mailto:support@blulumenpro.shop">support@blulumenpro.shop</a> &nbsp;·&nbsp;
+      <a href="tel:+13523916479">(352) 391-6479</a>
+    </p>
+    <p style="margin-top:0.5rem;color:rgba(255,255,255,0.55);">
+      128 W. Frisco Lane, Citrus Springs, FL 34434
     </p>
   </footer>
 
